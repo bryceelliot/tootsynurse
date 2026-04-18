@@ -37,6 +37,10 @@
 
   <link rel="stylesheet" href="style.css" />
 
+  <!-- Google Analytics 4 — replace GA_MEASUREMENT_ID with your real ID from analytics.google.com -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');</script> -->
+
   <!-- LocalBusiness structured data -->
   <script type="application/ld+json">
   {
@@ -87,6 +91,7 @@
     <li><a href="index.html" class="active">Home</a></li>
     <li><a href="services.html">Services</a></li>
     <li><a href="about.html">About</a></li>
+    <li><a href="blog.html">Blog</a></li>
   </ul>
   <a href="contact.html" class="nav-book">Book Now</a>
   <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
@@ -97,6 +102,8 @@
   <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
   <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
   <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+  <li><a href="blog.html" onclick="toggleMenu()">Blog</a></li>
+  <li><a href="testimonials.html" onclick="toggleMenu()">Reviews</a></li>
   <li><a href="contact.html" onclick="toggleMenu()">Book Now</a></li>
 </ul>
 
@@ -214,12 +221,12 @@
       <h2 class="t-h3">A little glimpse<br><em>of the experience</em></h2>
     </div>
     <div class="photo-grid reveal-group">
-      <img src="pexels-andreamostiphotography-17056222.jpg" alt="Foot care treatment" loading="lazy" />
-      <img src="pexels-alesiakozik-7795827.jpg" alt="Pedicure spa" loading="lazy" />
-      <img src="pexels-kseniachernaya-6340563.jpg" alt="Nail care" loading="lazy" />
-      <img src="pexels-tima-miroshnichenko-6187855.jpg" alt="Mobile foot care" loading="lazy" />
-      <img src="pexels-anete-lusina-5240641.jpg" alt="Luxury pedicure" loading="lazy" />
-      <img src="pexels-andreamostiphotography-17056221.jpg" alt="Foot care" loading="lazy" />
+      <img src="pexels-andreamostiphotography-17056222.jpg" alt="Foot care treatment" loading="lazy" decoding="async" />
+      <img src="pexels-alesiakozik-7795827.jpg" alt="Pedicure spa" loading="lazy" decoding="async" />
+      <img src="pexels-kseniachernaya-6340563.jpg" alt="Nail care" loading="lazy" decoding="async" />
+      <img src="pexels-tima-miroshnichenko-6187855.jpg" alt="Mobile foot care" loading="lazy" decoding="async" />
+      <img src="pexels-anete-lusina-5240641.jpg" alt="Luxury pedicure" loading="lazy" decoding="async" />
+      <img src="pexels-andreamostiphotography-17056221.jpg" alt="Foot care" loading="lazy" decoding="async" />
     </div>
   </div>
 </section>
@@ -294,6 +301,52 @@
         <div style="font-size:0.75rem; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold);">Diane L.</div>
       </div>
     </div>
+    <div class="text-center" style="margin-top:3rem;">
+      <a href="testimonials.html" class="btn btn-outline">Read All Reviews</a>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG PREVIEW -->
+<section style="background:var(--bg); border-top:1px solid var(--line);">
+  <div class="wrap section-pad">
+    <div class="text-center" style="margin-bottom:3.5rem;">
+      <span class="t-label">From the Blog</span>
+      <span class="rule rule-center"></span>
+      <h2 class="t-h2" style="margin-top:0.5rem;">Foot care tips<br><em>from a nurse</em></h2>
+    </div>
+    <div class="blog-grid reveal-group">
+      <a href="blog-diabetic-foot-care.html" class="blog-card">
+        <img src="pexels-tima-miroshnichenko-6187855.jpg" alt="Diabetic foot care" class="blog-card-img" loading="lazy" decoding="async" />
+        <div class="blog-card-body">
+          <div class="blog-tag">Clinical Care</div>
+          <div class="blog-card-title">Diabetic Foot Care in Kelowna: What to Expect at Your First Appointment</div>
+          <p class="blog-card-excerpt">If you're living with diabetes, your feet need specialised care. Here's what a first visit with a Foot Care Nurse looks like.</p>
+          <div class="blog-card-meta"><span>Lisa Tattersall</span><span>8 min read</span></div>
+        </div>
+      </a>
+      <a href="blog-mobile-pedicure-seniors.html" class="blog-card">
+        <img src="pexels-anete-lusina-5240641.jpg" alt="Mobile pedicure for seniors" class="blog-card-img" loading="lazy" decoding="async" />
+        <div class="blog-card-body">
+          <div class="blog-tag">Senior Care</div>
+          <div class="blog-card-title">Why More Kelowna Seniors Are Choosing Mobile Foot Care</div>
+          <p class="blog-card-excerpt">Getting to a salon isn't always easy. Mobile foot care brings clinical-grade pedicure and care to your living room.</p>
+          <div class="blog-card-meta"><span>Lisa Tattersall</span><span>6 min read</span></div>
+        </div>
+      </a>
+      <a href="blog-foot-care-nurse-vs-pedicurist.html" class="blog-card">
+        <img src="pexels-kseniachernaya-6340563.jpg" alt="Foot care nurse vs pedicurist" class="blog-card-img" loading="lazy" decoding="async" />
+        <div class="blog-card-body">
+          <div class="blog-tag">Education</div>
+          <div class="blog-card-title">Foot Care Nurse vs Regular Pedicurist: What's the Difference?</div>
+          <p class="blog-card-excerpt">They both take care of your feet — but the training, scope, and safety couldn't be more different. Here's what sets a nurse apart.</p>
+          <div class="blog-card-meta"><span>Lisa Tattersall</span><span>7 min read</span></div>
+        </div>
+      </a>
+    </div>
+    <div class="text-center" style="margin-top:3rem;">
+      <a href="blog.html" class="btn btn-rose">Read the Blog</a>
+    </div>
   </div>
 </section>
 
@@ -340,6 +393,8 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About Lisa</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="testimonials.html">Reviews</a></li>
         <li><a href="contact.html">Book Now</a></li>
       </ul>
     </div>
@@ -349,13 +404,14 @@
         <li><a href="tel:2508265549">(250) 826-5549</a></li>
         <li><a href="mailto:thetootsynurse@gmail.com">thetootsynurse@gmail.com</a></li>
         <li><a href="contact.html">Book an Appointment</a></li>
-        <li><a href="#">Kelowna, BC</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <span>© <span id="yr"></span> The Tootsy Nurse. All rights reserved.</span>
     <span>Mobile Foot Care · Kelowna, BC</span>
+    <span>Designed by <a href="https://bryceelliot.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.4); text-decoration:underline; text-underline-offset:3px;">Elliot Digital</a></span>
   </div>
 </footer>
 

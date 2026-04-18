@@ -541,8 +541,8 @@ textarea.finput { resize: vertical; min-height: 120px; }
 }
 .footer-logo img {
   height: 56px; width: auto;
-  mix-blend-mode: screen;
-  opacity: 0.72;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
   margin-bottom: 1rem;
 }
 .footer-tagline {
@@ -869,4 +869,134 @@ details[open] .faq-q::after { transform: rotate(45deg); }
   color: var(--muted);
   line-height: 1.7;
   margin: 0;
+}
+
+/* ─────────────────────────────────────────
+   WHATSAPP BUTTON
+───────────────────────────────────────── */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+  z-index: 900;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 28px rgba(37,211,102,0.55);
+}
+.whatsapp-btn svg { display: block; }
+@media (max-width: 640px) {
+  .whatsapp-btn { bottom: 5.5rem; right: 1rem; width: 50px; height: 50px; }
+}
+
+/* ─────────────────────────────────────────
+   BLOG
+───────────────────────────────────────── */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.blog-card {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+.blog-card:hover {
+  box-shadow: 0 8px 32px rgba(58,31,43,0.10);
+  transform: translateY(-3px);
+}
+.blog-card-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+.blog-card-body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.blog-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--rose);
+  margin-bottom: 0.6rem;
+}
+.blog-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--plum);
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+.blog-card-excerpt {
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 1.25rem;
+}
+.blog-card-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+/* Blog post article */
+.blog-article {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.blog-article h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  color: var(--plum);
+  margin: 2.5rem 0 1rem;
+}
+.blog-article h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--plum);
+  margin: 2rem 0 0.75rem;
+}
+.blog-article p { margin-bottom: 1.25rem; line-height: 1.8; }
+.blog-article ul, .blog-article ol {
+  margin: 0 0 1.25rem 1.5rem;
+  line-height: 1.8;
+}
+.blog-article li { margin-bottom: 0.4rem; }
+.blog-article .lead {
+  font-size: 1.15rem;
+  color: var(--plum);
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .blog-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .blog-grid { grid-template-columns: 1fr; }
 }

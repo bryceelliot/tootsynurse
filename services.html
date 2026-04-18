@@ -20,6 +20,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="style.css" />
+  <!-- Google Analytics 4 — replace GA_MEASUREMENT_ID -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');</script> -->
 </head>
 <body>
 
@@ -32,6 +35,7 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="services.html" class="active">Services</a></li>
     <li><a href="about.html">About</a></li>
+    <li><a href="blog.html">Blog</a></li>
   </ul>
   <a href="contact.html" class="nav-book">Book Now</a>
   <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
@@ -42,6 +46,8 @@
   <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
   <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
   <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+  <li><a href="blog.html" onclick="toggleMenu()">Blog</a></li>
+  <li><a href="testimonials.html" onclick="toggleMenu()">Reviews</a></li>
   <li><a href="contact.html" onclick="toggleMenu()">Book Now</a></li>
 </ul>
 
@@ -211,10 +217,10 @@
 <!-- PHOTO STRIP -->
 <div style="background:var(--bg); border-top:1px solid var(--line); padding:clamp(2rem,4vw,3rem) clamp(1.5rem,4vw,4rem);">
   <div class="photo-strip-4">
-    <img src="pexels-andreamostiphotography-17056222.jpg" alt="Foot care" loading="lazy" />
-    <img src="pexels-alesiakozik-7795827.jpg" alt="Pedicure" loading="lazy" />
-    <img src="pexels-kseniachernaya-6340563.jpg" alt="Nail care" loading="lazy" />
-    <img src="pexels-anete-lusina-5240641.jpg" alt="Spa treatment" loading="lazy" />
+    <img src="pexels-andreamostiphotography-17056222.jpg" alt="Foot care" loading="lazy" decoding="async" />
+    <img src="pexels-alesiakozik-7795827.jpg" alt="Pedicure" loading="lazy" decoding="async" />
+    <img src="pexels-kseniachernaya-6340563.jpg" alt="Nail care" loading="lazy" decoding="async" />
+    <img src="pexels-anete-lusina-5240641.jpg" alt="Spa treatment" loading="lazy" decoding="async" />
   </div>
 </div>
 
@@ -270,6 +276,8 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About Lisa</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="testimonials.html">Reviews</a></li>
         <li><a href="contact.html">Book Now</a></li>
       </ul>
     </div>
@@ -279,12 +287,14 @@
         <li><a href="tel:2508265549">(250) 826-5549</a></li>
         <li><a href="mailto:thetootsynurse@gmail.com">thetootsynurse@gmail.com</a></li>
         <li><a href="contact.html">Book an Appointment</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <span>© <span id="yr"></span> The Tootsy Nurse. All rights reserved.</span>
     <span>Mobile Foot Care · Kelowna, BC</span>
+    <span>Designed by <a href="https://bryceelliot.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.4); text-decoration:underline; text-underline-offset:3px;">Elliot Digital</a></span>
   </div>
 </footer>
 
