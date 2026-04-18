@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Foot Care Appointment — The Tootsy Nurse | Kelowna BC</title>
+  <meta name="description" content="Book a mobile foot care appointment with Lisa Tattersall, LPN, FCN in Kelowna, BC. Call (250) 826-5549 or fill out the online form." />
+  <meta name="keywords" content="book foot care Kelowna, foot care appointment Kelowna, mobile pedicure booking BC, contact Lisa Tattersall" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://thetootsynurse.com/contact.html" />
+  <meta name="geo.region" content="CA-BC" />
+  <meta name="geo.placename" content="Kelowna" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thetootsynurse.com/contact.html" />
+  <meta property="og:title" content="Book an Appointment — The Tootsy Nurse" />
+  <meta property="og:description" content="Book mobile foot care in Kelowna, BC. Call (250) 826-5549 or send a message online." />
+  <meta property="og:image" content="https://thetootsynurse.com/logo-png.png" />
+  <link rel="icon" type="image/png" href="logo-png.png" />
+  <link rel="apple-touch-icon" href="logo-png.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav nav--solid" id="nav">
+  <a href="index.html" class="nav-logo">The Tootsy Nurse</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <a href="contact.html" class="nav-book active">Book Now</a>
+  <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<ul class="mobile-menu" id="mobileMenu">
+  <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+  <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+  <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+  <li><a href="contact.html" onclick="toggleMenu()">Book Now</a></li>
+</ul>
+
+<!-- HERO BANNER -->
+<div id="main" class="hero-sm">
+  <div class="hero-sm-inner">
+    <span class="t-label">Book an Appointment</span>
+    <span class="rule" style="margin:1rem 0;"></span>
+    <h1 class="t-h2" style="color:var(--plum); max-width:520px;">
+      Let's get your feet<br><em>feeling wonderful.</em>
+    </h1>
+    <p class="t-body-lg" style="margin-top:1rem; max-width:480px;">Lisa comes to you — your home, care facility, or office. Kelowna and surrounding areas.</p>
+  </div>
+</div>
+
+<!-- PHONE CTA -->
+<div style="background:var(--plum); padding:1.5rem clamp(1.5rem,4vw,4rem); text-align:center;">
+  <p style="color:rgba(255,255,255,0.7); font-size:1rem; margin-bottom:0.6rem;">The fastest way to book — call Lisa directly:</p>
+  <a href="tel:2508265549" style="display:inline-flex; align-items:center; gap:0.6rem; font-family:'Playfair Display',serif; font-size:2rem; font-weight:500; color:white; letter-spacing:0.02em;">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    (250) 826-5549
+  </a>
+</div>
+
+<!-- MAIN: form + info -->
+<section style="background:var(--bg);">
+  <div class="wrap section-pad">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start;">
+
+      <!-- BOOKING FORM -->
+      <div class="reveal-left">
+        <span class="t-label">Send a Message</span>
+        <span class="rule" style="margin:1rem 0;"></span>
+        <h2 class="t-h3" style="margin-bottom:2rem;">Request an appointment</h2>
+
+        <form action="https://formspree.io/f/thetootsynurse" method="POST"
+              style="display:flex; flex-direction:column; gap:1.25rem;">
+          <div class="form-group">
+            <label class="form-label" for="name">Your Name</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone Number</label>
+            <input class="form-input" type="tel" id="phone" name="phone" placeholder="(250) 555-0100" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="jane@email.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="service">Service Interested In</label>
+            <select class="form-input" id="service" name="service">
+              <option value="">— Select a service —</option>
+              <option>Luxury Pedicure ($75)</option>
+              <option>Gel Pedicure ($95)</option>
+              <option>Signature Spa Pedicure ($130)</option>
+              <option>Mini Pedicure ($45)</option>
+              <option>Diabetic Foot Care ($90)</option>
+              <option>Elderly &amp; Mobility Care ($80)</option>
+              <option>Callus &amp; Corn Removal ($70)</option>
+              <option>Ingrown Toenail Treatment ($65)</option>
+              <option>Gel Polish Application ($40)</option>
+              <option>Gel Removal &amp; Reapplication ($55)</option>
+              <option>Not sure — help me choose</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="location">Your Location / Address</label>
+            <input class="form-input" type="text" id="location" name="location" placeholder="Kelowna, BC" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Anything Lisa should know?</label>
+            <textarea class="form-input form-textarea" id="message" name="message" placeholder="Preferred days/times, health conditions, special requests…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-rose" style="width:100%; margin-top:0.5rem;">
+            Send Booking Request
+          </button>
+          <p style="font-size:0.85rem; color:var(--muted); text-align:center; margin-top:-0.5rem;">
+            Lisa will follow up by phone or email within 24 hours.
+          </p>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="reveal-right" style="position:sticky; top:7rem;">
+        <span class="t-label">Contact &amp; Hours</span>
+        <span class="rule" style="margin:1rem 0;"></span>
+
+        <div style="display:flex; align-items:center; gap:1rem; margin-bottom:2rem;">
+          <div style="width:52px; height:52px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--muted); margin-bottom:0.2rem;">Phone</div>
+            <a href="tel:2508265549" style="font-family:'Playfair Display',serif; font-size:1.5rem; color:var(--plum); font-weight:500;">(250) 826-5549</a>
+          </div>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:1rem; margin-bottom:2rem;">
+          <div style="width:52px; height:52px; border-radius:50%; background:var(--gold); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--muted); margin-bottom:0.2rem;">Email</div>
+            <a href="mailto:thetootsynurse@gmail.com" style="font-size:1rem; color:var(--rose); font-weight:500; word-break:break-word;">thetootsynurse@gmail.com</a>
+          </div>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:1rem; margin-bottom:2.5rem;">
+          <div style="width:52px; height:52px; border-radius:50%; background:var(--plum); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--muted); margin-bottom:0.2rem;">Service Area</div>
+            <div style="font-size:1rem; color:var(--text); font-weight:500;">Kelowna &amp; surrounding areas</div>
+            <div style="font-size:0.9rem; color:var(--muted);">Mobile service — Lisa comes to you</div>
+          </div>
+        </div>
+
+        <div style="background:var(--bg-soft); border-radius:16px; padding:1.75rem; border:1px solid var(--line);">
+          <div style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--muted); margin-bottom:1.2rem;">Availability</div>
+          <div style="display:flex; flex-direction:column; gap:0.75rem;">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-weight:500;">Monday – Friday</span>
+              <span style="color:var(--rose); font-weight:500;">9:00 am – 5:00 pm</span>
+            </div>
+            <div style="height:1px; background:var(--line);"></div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-weight:500;">Saturday</span>
+              <span style="color:var(--rose); font-weight:500;">10:00 am – 3:00 pm</span>
+            </div>
+            <div style="height:1px; background:var(--line);"></div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-weight:500;">Sunday</span>
+              <span style="color:var(--muted);">By request</span>
+            </div>
+          </div>
+          <p style="font-size:0.85rem; color:var(--muted); margin-top:1.25rem; margin-bottom:0;">Hours may vary. Calling ahead is always welcome.</p>
+        </div>
+
+        <div style="margin-top:1.5rem; background:linear-gradient(135deg, var(--plum) 0%, #5A2F42 100%); border-radius:16px; padding:1.5rem; text-align:center;">
+          <p style="color:rgba(255,255,255,0.75); font-size:0.9rem; margin-bottom:0.4rem;">Looking for a gift?</p>
+          <p style="color:white; font-family:'Playfair Display',serif; font-size:1.25rem; font-weight:500; margin-bottom:0.75rem;">Gift Cards Available</p>
+          <a href="mailto:thetootsynurse@gmail.com?subject=Gift Card Inquiry" style="display:inline-block; padding:0.6rem 1.5rem; background:var(--gold); color:white; border-radius:40px; font-weight:600; font-size:0.9rem;">Email to Purchase</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-soft" style="border-top:1px solid var(--line);">
+  <div class="wrap section-pad">
+    <div style="text-align:center; margin-bottom:3rem;">
+      <span class="t-label">Common Questions</span>
+      <span class="rule rule-center" style="margin:1rem auto;"></span>
+      <h2 class="t-h3">Frequently asked questions</h2>
+    </div>
+    <div style="max-width:720px; margin:0 auto; border:1px solid var(--line); border-radius:16px; overflow:hidden;">
+      <details class="faq-item">
+        <summary class="faq-q">Do you travel to my home?</summary>
+        <p class="faq-a">Yes — that's the whole idea. Lisa brings everything needed right to your door: a portable basin, sterilized tools, premium products, and her nursing expertise. No driving, no waiting rooms.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Is it safe if I have diabetes?</summary>
+        <p class="faq-a">Absolutely. Lisa is specifically trained in diabetic foot care. She performs a full skin and circulation assessment, trims nails safely to prevent ingrown nails, and manages calluses with nurse-grade care. Many of her regular clients are diabetic.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">How do I pay?</summary>
+        <p class="faq-a">Cash, e-transfer, and major credit cards are all accepted. Payment is made at the time of your appointment.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">What if I need to cancel or reschedule?</summary>
+        <p class="faq-a">Life happens — just give Lisa a call or text at least 24 hours in advance and she'll be happy to reschedule. Late cancellations may be subject to a fee.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Do you serve care homes and assisted living?</summary>
+        <p class="faq-a">Yes. Lisa regularly visits care facilities throughout the Kelowna area. Group bookings for facilities are welcome — contact Lisa directly to arrange.</p>
+      </details>
+      <details class="faq-item" style="border-bottom:none;">
+        <summary class="faq-q">How far in advance should I book?</summary>
+        <p class="faq-a">Availability varies by season. Calling a week or two ahead is usually enough, but popular slots (especially Saturdays) fill quickly. Repeat clients often book their next appointment at the end of each visit.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-logo">
+      <img src="logo-png.png" alt="The Tootsy Nurse" />
+      <p class="footer-tagline">"Treat your feet."<br>Lisa Tattersall, LPN, FCN · Kelowna, BC</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/thetootsynurse" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px;"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram
+        </a>
+        <a href="https://www.facebook.com/thetootsynurse" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px;"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook
+        </a>
+        <a href="mailto:thetootsynurse@gmail.com">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email
+        </a>
+        <a href="https://www.linkedin.com/in/lisa-tattersall-432aa1210/" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Navigate</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Lisa</a></li>
+        <li><a href="contact.html">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul>
+        <li><a href="tel:2508265549">(250) 826-5549</a></li>
+        <li><a href="mailto:thetootsynurse@gmail.com">thetootsynurse@gmail.com</a></li>
+        <li><a href="contact.html">Book an Appointment</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="yr"></span> The Tootsy Nurse. All rights reserved.</span>
+    <span>Mobile Foot Care · Kelowna, BC</span>
+  </div>
+</footer>
+
+<div class="phone-bar">
+  <a href="tel:2508265549">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call Lisa: (250) 826-5549
+  </a>
+</div>
+
+<script src="app.js" defer></script>
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+</script>
+</body>
+</html>

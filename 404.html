@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — The Tootsy Nurse</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" href="logo-png.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav nav--solid">
+  <a href="index.html" class="nav-logo">The Tootsy Nurse</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <a href="contact.html" class="nav-book">Book Now</a>
+  <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<ul class="mobile-menu" id="mobileMenu">
+  <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+  <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+  <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+  <li><a href="contact.html" onclick="toggleMenu()">Book Now</a></li>
+</ul>
+
+<section style="background:var(--bg); min-height:80vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:4rem 1.5rem;">
+  <div style="max-width:480px;">
+    <img src="logo-png.png" alt="The Tootsy Nurse" style="height:120px; width:auto; margin:0 auto 2.5rem; mix-blend-mode:multiply; opacity:0.5; display:block;" />
+    <span class="t-label" style="display:block; margin-bottom:1rem;">404 — Page Not Found</span>
+    <span class="rule rule-center" style="margin:1rem auto;"></span>
+    <h1 class="t-h2" style="margin-bottom:1rem; color:var(--plum);">
+      Oops — these<br><em>aren't the feet</em><br>you're looking for.
+    </h1>
+    <p class="t-body-lg" style="margin-bottom:2.5rem;">The page you're looking for has moved or doesn't exist. Let's get you back on track.</p>
+    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+      <a href="index.html" class="btn btn-rose">Back to Home</a>
+      <a href="contact.html" class="btn btn-outline">Book an Appointment</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-logo">
+      <img src="logo-png.png" alt="The Tootsy Nurse" />
+      <p class="footer-tagline">"Treat your feet."<br>Lisa Tattersall, LPN, FCN · Kelowna, BC</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Navigate</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Lisa</a></li>
+        <li><a href="contact.html">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul>
+        <li><a href="tel:2508265549">(250) 826-5549</a></li>
+        <li><a href="mailto:thetootsynurse@gmail.com">thetootsynurse@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="yr"></span> The Tootsy Nurse. All rights reserved.</span>
+    <span>Mobile Foot Care · Kelowna, BC</span>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+</script>
+</body>
+</html>
