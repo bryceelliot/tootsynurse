@@ -1,0 +1,221 @@
+/* ============================================================
+   SPLIT-SCREEN LANDING PAGE — SUSAN SWARTZ STUDIOS
+   Paste into: Design ▸ Custom CSS (Squarespace 7.1)
+   ------------------------------------------------------------
+   Page setup required first:
+   1. Create a new page (e.g. "Home") with TWO sections stacked.
+   2. Set each section's height to "Large" and add a background
+      image (Artist image left section, Gallery image right).
+   3. In each section, add a TEXT block with this structure:
+
+      ARTIST
+      about
+      cv
+      artwork
+      exhibitions
+
+      Make "ARTIST" an H1 and the nav items an H3 or paragraph
+      with links. Do the same for GALLERY in section two.
+   4. Add the CSS class "split-left" to section 1 and
+      "split-right" to section 2 via the section's settings
+      (or use the nth-child selectors below — already handled).
+   5. Hide the header nav on this page only:
+      Page Settings ▸ Advanced ▸ Page Header Code Injection
+         <style>.header{display:none!important;}</style>
+   ============================================================ */
+
+/* ---------- SPLIT-SCREEN LAYOUT ---------- */
+#page section.page-section {
+  width: 50vw !important;
+  min-height: 100vh !important;
+  height: 100vh !important;
+  float: left;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Left panel — ARTIST */
+#page section.page-section:nth-of-type(1) {
+  left: 0;
+}
+
+/* Right panel — GALLERY */
+#page section.page-section:nth-of-type(2) {
+  left: 0;
+}
+
+/* Remove the stacking so sections sit side-by-side */
+#page > .sections,
+#sections {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/* ---------- DIM OVERLAY ---------- */
+#page section.page-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  transition: background 0.4s ease;
+  pointer-events: none;
+}
+
+#page section.page-section:hover::before {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* ---------- CENTERED CONTENT BLOCK ---------- */
+#page section.page-section .content-wrapper,
+#page section.page-section .section-background ~ * {
+  position: relative;
+  z-index: 2;
+}
+
+#page section.page-section .sqs-block-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+/* ---------- MAIN HEADING (ARTIST / GALLERY) ---------- */
+#page section.page-section h1 {
+  font-size: clamp(3rem, 7vw, 7rem) !important;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #fff !important;
+  margin: 0 0 1rem 0 !important;
+  transition: transform 0.5s ease, letter-spacing 0.5s ease;
+}
+
+#page section.page-section:hover h1 {
+  transform: translateY(-20px);
+  letter-spacing: 0.25em;
+}
+
+/* ---------- DROPDOWN NAV (hidden until hover) ---------- */
+#page section.page-section h3,
+#page section.page-section p {
+  opacity: 0;
+  max-height: 0;
+  margin: 0 !important;
+  overflow: hidden;
+  transform: translateY(20px);
+  transition:
+    opacity 0.5s ease 0.1s,
+    max-height 0.6s ease,
+    transform 0.5s ease 0.1s,
+    margin 0.5s ease;
+  color: #fff !important;
+  font-size: clamp(1rem, 1.6vw, 1.5rem);
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  line-height: 2.2;
+}
+
+#page section.page-section:hover h3,
+#page section.page-section:hover p {
+  opacity: 1;
+  max-height: 400px;
+  transform: translateY(0);
+  margin: 0.4rem 0 !important;
+}
+
+/* Stagger each item for a nicer reveal */
+#page section.page-section:hover h3:nth-of-type(1),
+#page section.page-section:hover p:nth-of-type(1) { transition-delay: 0.15s; }
+#page section.page-section:hover h3:nth-of-type(2),
+#page section.page-section:hover p:nth-of-type(2) { transition-delay: 0.25s; }
+#page section.page-section:hover h3:nth-of-type(3),
+#page section.page-section:hover p:nth-of-type(3) { transition-delay: 0.35s; }
+#page section.page-section:hover h3:nth-of-type(4),
+#page section.page-section:hover p:nth-of-type(4) { transition-delay: 0.45s; }
+
+/* ---------- NAV LINKS ---------- */
+#page section.page-section a {
+  color: #fff !important;
+  text-decoration: none !important;
+  background-image: none !important;
+  position: relative;
+  padding: 0.2em 0.4em;
+  transition: color 0.25s ease;
+}
+
+#page section.page-section a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+#page section.page-section a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* ---------- SPLIT GROW ON HOVER (optional) ---------- */
+#sections:hover section.page-section:not(:hover) {
+  width: 40vw !important;
+}
+#sections section.page-section:hover {
+  width: 60vw !important;
+}
+
+/* ---------- MOBILE: STACK VERTICALLY ---------- */
+@media (max-width: 768px) {
+  #page > .sections,
+  #sections {
+    flex-direction: column !important;
+  }
+
+  #page section.page-section,
+  #sections:hover section.page-section:not(:hover),
+  #sections section.page-section:hover {
+    width: 100vw !important;
+    height: 50vh !important;
+    min-height: 50vh !important;
+  }
+
+  /* Show nav by default on mobile (no hover) */
+  #page section.page-section h3,
+  #page section.page-section p {
+    opacity: 1;
+    max-height: none;
+    transform: none;
+    margin: 0.3rem 0 !important;
+  }
+
+  #page section.page-section::before {
+    background: rgba(0, 0, 0, 0.45);
+  }
+}
+
+/* ---------- HIDE HEADER / FOOTER ON THIS PAGE ---------- */
+/* If you want a cleaner full-bleed landing, also add the class
+   "landing" to the page via Page Settings ▸ Advanced, then: */
+body.landing .header,
+body.landing #header,
+body.landing footer,
+body.landing #footer-sections {
+  display: none !important;
+}
+
+body.landing #page,
+body.landing #siteWrapper {
+  padding: 0 !important;
+  margin: 0 !important;
+}
