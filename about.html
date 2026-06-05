@@ -14,12 +14,26 @@
   <meta property="og:url" content="https://thetootsynurse.com/about.html" />
   <meta property="og:title" content="About Lisa Tattersall LPN FCN — The Tootsy Nurse" />
   <meta property="og:description" content="Licensed Practical Nurse and Certified Foot Care Nurse. Mobile foot care in Kelowna, BC." />
-  <meta property="og:image" content="https://thetootsynurse.com/logo-png.png" />
-  <link rel="icon" type="image/png" href="logo-png.png" />
-  <link rel="apple-touch-icon" href="logo-png.png" />
+  <meta property="og:image" content="https://thetootsynurse.com/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Lisa Tattersall LPN FCN — The Tootsy Nurse" />
+  <meta name="twitter:description" content="Licensed Practical Nurse & Certified Foot Care Nurse. Mobile foot & nail care in Kelowna, BC." />
+  <meta name="twitter:image" content="https://thetootsynurse.com/og-image.jpg" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#3A1F2B" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","@id":"https://thetootsynurse.com/#lisa","name":"Lisa Tattersall","jobTitle":"Licensed Practical Nurse & Certified Foot Care Nurse","hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"license","name":"Licensed Practical Nurse (LPN)"},{"@type":"EducationalOccupationalCredential","credentialCategory":"certificate","name":"Advanced Foot Care Nursing Certification"}],"worksFor":{"@type":"LocalBusiness","name":"The Tootsy Nurse","@id":"https://thetootsynurse.com/#business"},"areaServed":"Kelowna, BC","url":"https://thetootsynurse.com/about.html","sameAs":["https://www.linkedin.com/in/lisa-tattersall-432aa1210/"]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://thetootsynurse.com/"},{"@type":"ListItem","position":2,"name":"About","item":"https://thetootsynurse.com/about.html"}]}
+  </script>
   <!-- Google Analytics 4 — replace GA_MEASUREMENT_ID -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');</script> -->
@@ -28,7 +42,7 @@
 
 <a class="skip-link" href="#main">Skip to content</a>
 
-<nav class="nav nav--solid">
+<nav class="nav nav--solid" id="nav">
   <a href="index.html" class="nav-logo">The Tootsy Nurse</a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
@@ -46,13 +60,12 @@
   <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
   <li><a href="about.html" onclick="toggleMenu()">About</a></li>
   <li><a href="blog.html" onclick="toggleMenu()">Blog</a></li>
-  <li><a href="testimonials.html" onclick="toggleMenu()">Reviews</a></li>
   <li><a href="contact.html" onclick="toggleMenu()">Book Now</a></li>
 </ul>
 
 <!-- HERO BANNER -->
 <div id="main" class="hero-sm">
-  <div class="hero-sm-inner">
+  <div class="hero-sm-inner hero-enter">
     <span class="t-label">Meet Your Nurse</span>
     <span class="rule" style="margin:1rem 0;"></span>
     <h1 class="t-h2" style="color:var(--plum); max-width:500px;">
@@ -65,12 +78,7 @@
 <!-- STORY -->
 <section style="background:var(--bg);">
   <div class="wrap section-pad">
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center;">
-      <!-- Photo panel -->
-      <div class="reveal-left" style="border-radius:16px; overflow:hidden; aspect-ratio:3/4;">
-        <img src="pexels-zeal-creative-studios-58866141-31091766.jpg" alt="Lisa performing foot care"
-             style="width:100%; height:100%; object-fit:cover; display:block;" />
-      </div>
+    <div style="max-width:720px; margin:0 auto;">
       <!-- Story text -->
       <div class="reveal-right">
         <span class="t-label">My Story</span>
@@ -101,7 +109,7 @@
       <span class="rule rule-center"></span>
       <h2 class="t-h2" style="margin-top:0.5rem;">Credentials &amp; <em>certifications</em></h2>
     </div>
-    <div class="grid-2 reveal-group" style="max-width:900px; margin:0 auto;">
+    <div class="grid-3 reveal-group" style="max-width:900px; margin:0 auto;">
       <div class="card">
         <div style="font-size:0.72rem; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); margin-bottom:0.6rem;">01</div>
         <div class="t-h3" style="margin-bottom:0.6rem;">Licensed Practical Nurse (LPN)</div>
@@ -116,11 +124,6 @@
         <div style="font-size:0.72rem; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); margin-bottom:0.6rem;">03</div>
         <div class="t-h3" style="margin-bottom:0.6rem;">Infection Control &amp; Sterile Technique</div>
         <p class="t-body">Hospital-grade sterilization and infection prevention protocols at every appointment — your safety is non-negotiable.</p>
-      </div>
-      <div class="card">
-        <div style="font-size:0.72rem; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); margin-bottom:0.6rem;">04</div>
-        <div class="t-h3" style="margin-bottom:0.6rem;">Advanced Nail Technology</div>
-        <p class="t-body">Professional training in gel application, nail art, and nail health restoration — beauty that never compromises wellness.</p>
       </div>
     </div>
   </div>
@@ -140,28 +143,28 @@
       </div>
       <div style="display:flex; flex-direction:column; gap:1.2rem;">
         <div style="display:flex; gap:1rem; align-items:flex-start;">
-          <div style="width:36px; height:36px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:white; font-weight:600; font-size:0.9rem;">✓</div>
+          <div style="width:36px; height:36px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:white;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
           <div>
             <div style="font-weight:500; color:var(--plum); font-size:1.05rem; margin-bottom:0.2rem;">Your health comes first</div>
             <p class="t-body" style="font-size:0.95rem;">Every decision is guided by your wellbeing — aesthetics are always secondary to clinical care.</p>
           </div>
         </div>
         <div style="display:flex; gap:1rem; align-items:flex-start;">
-          <div style="width:36px; height:36px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:white; font-weight:600; font-size:0.9rem;">✓</div>
+          <div style="width:36px; height:36px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:white;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
           <div>
             <div style="font-weight:500; color:var(--plum); font-size:1.05rem; margin-bottom:0.2rem;">Sterile tools, every time</div>
             <p class="t-body" style="font-size:0.95rem;">New or fully sterilized instruments for every single client. No exceptions, ever.</p>
           </div>
         </div>
         <div style="display:flex; gap:1rem; align-items:flex-start;">
-          <div style="width:36px; height:36px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:white; font-weight:600; font-size:0.9rem;">✓</div>
+          <div style="width:36px; height:36px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:white;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
           <div>
             <div style="font-weight:500; color:var(--plum); font-size:1.05rem; margin-bottom:0.2rem;">A judgment-free space</div>
             <p class="t-body" style="font-size:0.95rem;">Whether your feet are perfectly maintained or in need of real care — you are welcomed with kindness.</p>
           </div>
         </div>
         <div style="display:flex; gap:1rem; align-items:flex-start;">
-          <div style="width:36px; height:36px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:white; font-weight:600; font-size:0.9rem;">✓</div>
+          <div style="width:36px; height:36px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:white;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
           <div>
             <div style="font-weight:500; color:var(--plum); font-size:1.05rem; margin-bottom:0.2rem;">Genuine luxury</div>
             <p class="t-body" style="font-size:0.95rem;">Premium products, undivided attention, and the care of a professional who truly loves what she does.</p>
@@ -171,24 +174,6 @@
     </div>
   </div>
 </section>
-
-<!-- GALLERY -->
-<section style="background:var(--bg-deep); border-top:1px solid var(--line);">
-  <div class="wrap section-pad">
-    <div class="photo-grid">
-      <img src="pexels-tima-miroshnichenko-6188032.jpg" alt="Pedicure treatment" loading="lazy" decoding="async" />
-      <img src="pexels-arina-krasnikova-6663577.jpg" alt="Nail care" loading="lazy" decoding="async" />
-      <img src="pexels-duksi-30798659.jpg" alt="Foot care spa" loading="lazy" decoding="async" />
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIAL -->
-<div class="testimonial-block">
-  <span class="quote-mark">"</span>
-  <p class="quote-body">Lisa's nursing knowledge combined with her genuine warmth is unlike anything I've experienced. She noticed a concern no one else had caught — and then gave me the most beautiful pedicure of my life.</p>
-  <p class="quote-name">— Sandra K., Kelowna</p>
-</div>
 
 <!-- CTA -->
 <section class="bg-plum" style="padding:clamp(4rem,7vw,7rem) clamp(1.5rem,4vw,4rem); text-align:center;">
@@ -212,7 +197,7 @@
 <footer class="footer">
   <div class="footer-grid">
     <div class="footer-logo">
-      <img src="logo-png.png" alt="The Tootsy Nurse" />
+      <img src="logo-png.png?v=2" alt="The Tootsy Nurse" />
       <p class="footer-tagline">"Treat your feet."<br>Lisa Tattersall, LPN, FCN · Kelowna, BC</p>
       <div class="footer-social">
         <a href="https://www.instagram.com/thetootsynurse" target="_blank" rel="noopener">
@@ -236,7 +221,6 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About Lisa</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="testimonials.html">Reviews</a></li>
         <li><a href="contact.html">Book Now</a></li>
       </ul>
     </div>

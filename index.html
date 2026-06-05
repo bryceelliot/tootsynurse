@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Tootsy Nurse — Mobile Foot Care Kelowna BC | Lisa Tattersall LPN FCN</title>
-  <meta name="description" content="Luxury mobile foot care by Lisa Tattersall, LPN, FCN. Pedicures, diabetic care, callus removal, gel nails — delivered to your home in Kelowna, BC." />
-  <meta name="keywords" content="mobile foot care Kelowna, pedicure Kelowna, diabetic foot care Kelowna, foot care nurse Kelowna, gel nails Kelowna, LPN foot care BC, home pedicure Kelowna" />
+  <meta name="description" content="Mobile foot &amp; nail care by Lisa Tattersall, LPN, FCN. Nurse-led foot care, home spa pedicures, and senior &amp; diabetic care — delivered to your home in Kelowna, BC." />
+  <meta name="keywords" content="mobile foot care Kelowna, foot care nurse Kelowna, home pedicure Kelowna, diabetic foot care Kelowna, senior foot care Kelowna, LPN foot care BC, foot care near me Kelowna" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://thetootsynurse.com/" />
 
@@ -19,23 +19,28 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://thetootsynurse.com/" />
   <meta property="og:title" content="The Tootsy Nurse — Mobile Foot Care Kelowna BC" />
-  <meta property="og:description" content="Luxury mobile foot care by Lisa Tattersall, LPN, FCN. Pedicures, diabetic care, gel nails — delivered to your home in Kelowna, BC." />
-  <meta property="og:image" content="https://thetootsynurse.com/logo-png.png" />
+  <meta property="og:description" content="Nurse-led mobile foot &amp; nail care by Lisa Tattersall, LPN, FCN. Home spa pedicures and senior &amp; diabetic care, delivered to your door in Kelowna, BC." />
+  <meta property="og:image" content="https://thetootsynurse.com/og-image.jpg" />
   <meta property="og:locale" content="en_CA" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="The Tootsy Nurse — Mobile Foot Care Kelowna BC" />
-  <meta name="twitter:description" content="Luxury mobile foot care by Lisa Tattersall, LPN, FCN. Delivered to your home in Kelowna, BC." />
-  <meta name="twitter:image" content="https://thetootsynurse.com/logo-png.png" />
+  <meta name="twitter:description" content="Nurse-led mobile foot &amp; nail care by Lisa Tattersall, LPN, FCN. Delivered to your home in Kelowna, BC." />
+  <meta name="twitter:image" content="https://thetootsynurse.com/og-image.jpg" />
 
   <!-- Fonts -->
-  <link rel="icon" type="image/png" href="logo-png.png" />
-  <link rel="apple-touch-icon" href="logo-png.png" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#3A1F2B" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
   <link rel="stylesheet" href="style.css" />
+  <link rel="preload" as="image" href="pexels-marine-fougere-2159237528-35884502.jpg?v=2" fetchpriority="high" />
 
   <!-- Google Analytics 4 — replace GA_MEASUREMENT_ID with your real ID from analytics.google.com -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
@@ -45,14 +50,18 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
+    "@id": "https://thetootsynurse.com/#business",
     "name": "The Tootsy Nurse",
-    "description": "Luxury mobile foot care by Lisa Tattersall, LPN, FCN. Pedicures, diabetic foot care, callus removal, gel nails delivered to your home in Kelowna, BC.",
+    "description": "Mobile foot & nail care by Lisa Tattersall, LPN and Certified Foot Care Nurse, who travels to clients' homes in Kelowna, BC. Services include nurse-led foot care, home spa pedicures, and senior & diabetic care.",
     "url": "https://thetootsynurse.com",
     "telephone": "+12508265549",
     "email": "thetootsynurse@gmail.com",
-    "image": "https://thetootsynurse.com/logo-png.png",
+    "image": "https://thetootsynurse.com/logo-png.png?v=2",
     "priceRange": "$$",
+    "paymentAccepted": "Cash, e-Transfer",
+    "currenciesAccepted": "CAD",
+    "founder": { "@id": "https://thetootsynurse.com/#lisa" },
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Kelowna",
@@ -64,13 +73,19 @@
       "latitude": 49.8880,
       "longitude": -119.4960
     },
-    "areaServed": {
-      "@type": "City",
-      "name": "Kelowna"
-    },
+    "areaServed": [
+      { "@type": "City", "name": "Kelowna" },
+      { "@type": "City", "name": "West Kelowna" },
+      { "@type": "City", "name": "Lake Country" },
+      { "@type": "City", "name": "Peachland" }
+    ],
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "10:00", "closes": "15:00" }
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "14:00" }
+    ],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobile Foot Care", "description": "Nail trim, callus and corn care, ingrown toenail correction, skin and circulation check, and a nourishing moisturising treatment." }, "price": "65.00", "priceCurrency": "CAD" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Spa Pedicure", "description": "Warm foot soak, exfoliating scrub, cuticle care, and moisturising massage." }, "price": "85.00", "priceCurrency": "CAD" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Senior & Diabetic Care", "description": "Comfort-focused, gentle, safe foot care for seniors, diabetic clients, or those with limited mobility." }, "availability": "https://schema.org/InStock" }
     ],
     "sameAs": [
       "https://www.instagram.com/thetootsynurse",
@@ -103,48 +118,32 @@
   <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
   <li><a href="about.html" onclick="toggleMenu()">About</a></li>
   <li><a href="blog.html" onclick="toggleMenu()">Blog</a></li>
-  <li><a href="testimonials.html" onclick="toggleMenu()">Reviews</a></li>
   <li><a href="contact.html" onclick="toggleMenu()">Book Now</a></li>
 </ul>
 
 <!-- HERO -->
-<section class="hero">
-  <img src="logo-png.png" alt="" class="hero-watermark" />
-  <!-- All content sits right below the logo -->
-  <div style="position:relative; z-index:1; text-align:center; margin-top:auto;
-              padding: calc(4vh + min(88vw,68vh) + 1.5rem) clamp(1.5rem,4vw,4rem) clamp(3.5rem,6vw,5rem);">
-    <span class="t-label" style="display:block; margin-bottom:0.75rem;">Mobile Foot Care · Kelowna, BC</span>
-    <span class="rule rule-center"></span>
-    <p style="font-family:'Playfair Display',serif; font-size:clamp(1.1rem,2.2vw,1.6rem); font-style:italic; font-weight:400; color:var(--plum); max-width:480px; margin:1rem auto; line-height:1.6;">
-      Clinical expertise. Spa indulgence.<br>Delivered to your door.
-    </p>
-    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:1.5rem;">
-      <a href="contact.html" class="btn btn-plum">Book an Appointment</a>
-      <a href="services.html" class="btn btn-outline" style="border-color:var(--plum); color:var(--plum);">Explore Services</a>
+<section class="hero-split">
+  <div class="hero-split-text hero-enter">
+    <span class="t-label">Mobile Foot &amp; Nail Care · Kelowna, BC</span>
+    <h1 class="hero-h1">Beautiful, healthy feet —<br><em>cared for at home.</em></h1>
+    <p class="hero-sub">Home spa pedicures and gentle clinical foot care by Lisa Tattersall, LPN &amp; Certified Foot Care Nurse — brought right to your door.</p>
+    <div class="hero-cta">
+      <a href="contact.html" class="btn btn-rose">Book an Appointment</a>
+      <a href="services.html" class="btn btn-outline" style="border-color:var(--plum); color:var(--plum);">Services &amp; Pricing</a>
     </div>
+    <ul class="hero-trust">
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>LPN &amp; FCN Certified</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Hospital-grade sterile</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>We come to you</li>
+    </ul>
+  </div>
+  <div class="hero-split-media">
+    <img src="pexels-marine-fougere-2159237528-35884502.jpg?v=2" alt="Calm in-home spa setup with a lit candle, fresh rolled towel and gold mirror" width="1280" height="1920" fetchpriority="high" decoding="async" />
   </div>
 </section>
 
-<!-- STATS -->
-<div id="main" style="background:var(--bg-soft); border-bottom:1px solid var(--line);">
-  <div class="stats-row reveal-group" style="max-width:1140px; margin:0 auto;">
-    <div class="stat-cell">
-      <div class="stat-n">500<span>+</span></div>
-      <div class="stat-l">Happy Clients</div>
-    </div>
-    <div class="stat-cell">
-      <div class="stat-n">12<span>+</span></div>
-      <div class="stat-l">Treatments</div>
-    </div>
-    <div class="stat-cell">
-      <div class="stat-n">100<span>%</span></div>
-      <div class="stat-l">Mobile Service</div>
-    </div>
-  </div>
-</div>
-
 <!-- INTRO -->
-<section style="background:var(--bg);">
+<section id="main" style="background:var(--bg);">
   <div class="wrap section-pad">
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center;">
       <div class="reveal-left">
@@ -162,7 +161,7 @@
         <a href="about.html" class="btn btn-outline">Meet Lisa →</a>
       </div>
       <div class="reveal-right" style="position:relative; border-radius:16px; overflow:hidden; aspect-ratio:4/3;">
-        <img src="pexels-marine-fougere-2159237528-35884502.jpg" alt="Luxury foot care treatment"
+        <img src="pexels-anete-lusina-5240641.jpg?v=2" alt="Nurse performing a gentle foot treatment"
              style="width:100%; height:100%; object-fit:cover; display:block;" />
       </div>
     </div>
@@ -179,29 +178,29 @@
     </div>
     <div class="grid-3 reveal-group" style="margin-bottom:3rem;">
       <div class="card">
-        <div style="font-size:2rem; margin-bottom:1rem;">💅</div>
-        <div class="t-h3" style="margin-bottom:0.6rem;">Luxury Pedicure</div>
-        <p class="t-body" style="margin-bottom:1.5rem;">Soak, exfoliate, massage, cuticle care, shape & polish. The classic, done with nurse precision.</p>
+        <div style="margin-bottom:1.1rem; color:var(--rose);"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <div class="t-h3" style="margin-bottom:0.6rem;">Mobile Foot Care</div>
+        <p class="t-body" style="margin-bottom:1.5rem;">Nail trim, callus management, corn & ingrown care, with a skin and circulation check — finished with a nourishing moisturising treatment.</p>
         <div style="display:flex; justify-content:space-between; align-items:center; padding-top:1rem; border-top:1px solid var(--line);">
-          <span style="font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--plum);">$75</span>
+          <span style="font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--plum);">$65</span>
           <a href="services.html" class="btn btn-outline" style="padding:0.5rem 1.2rem; font-size:0.8rem;">View →</a>
         </div>
       </div>
       <div class="card">
-        <div style="font-size:2rem; margin-bottom:1rem;">🏥</div>
-        <div class="t-h3" style="margin-bottom:0.6rem;">Diabetic Foot Care</div>
-        <p class="t-body" style="margin-bottom:1.5rem;">Clinical assessment, safe nail care, callus management & circulation check. Nurse-safe always.</p>
+        <div style="margin-bottom:1.1rem; color:var(--rose);"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div>
+        <div class="t-h3" style="margin-bottom:0.6rem;">Home Spa Pedicure</div>
+        <p class="t-body" style="margin-bottom:1.5rem;">The classic experience — warm foot soak, exfoliating scrub, cuticle care and a moisturising massage. Pure bliss.</p>
         <div style="display:flex; justify-content:space-between; align-items:center; padding-top:1rem; border-top:1px solid var(--line);">
-          <span style="font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--plum);">$90</span>
+          <span style="font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--plum);">$85</span>
           <a href="services.html" class="btn btn-outline" style="padding:0.5rem 1.2rem; font-size:0.8rem;">View →</a>
         </div>
       </div>
       <div class="card">
-        <div style="font-size:2rem; margin-bottom:1rem;">✨</div>
-        <div class="t-h3" style="margin-bottom:0.6rem;">Signature Spa Pedicure</div>
-        <p class="t-body" style="margin-bottom:1.5rem;">Soak, scrub, mask, hot towel wrap, deep massage & gel polish. Pure indulgence.</p>
+        <div style="margin-bottom:1.1rem; color:var(--rose);"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg></div>
+        <div class="t-h3" style="margin-bottom:0.6rem;">Senior &amp; Diabetic Care</div>
+        <p class="t-body" style="margin-bottom:1.5rem;">Comfort-focused, gentle, safe care for seniors, diabetic clients, or those with limited mobility.</p>
         <div style="display:flex; justify-content:space-between; align-items:center; padding-top:1rem; border-top:1px solid var(--line);">
-          <span style="font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--plum);">$130</span>
+          <span style="font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--plum);">By request</span>
           <a href="services.html" class="btn btn-outline" style="padding:0.5rem 1.2rem; font-size:0.8rem;">View →</a>
         </div>
       </div>
@@ -221,12 +220,12 @@
       <h2 class="t-h3">A little glimpse<br><em>of the experience</em></h2>
     </div>
     <div class="photo-grid reveal-group">
-      <img src="pexels-andreamostiphotography-17056222.jpg" alt="Foot care treatment" loading="lazy" decoding="async" />
-      <img src="pexels-alesiakozik-7795827.jpg" alt="Pedicure spa" loading="lazy" decoding="async" />
-      <img src="pexels-kseniachernaya-6340563.jpg" alt="Nail care" loading="lazy" decoding="async" />
-      <img src="pexels-tima-miroshnichenko-6187855.jpg" alt="Mobile foot care" loading="lazy" decoding="async" />
-      <img src="pexels-anete-lusina-5240641.jpg" alt="Luxury pedicure" loading="lazy" decoding="async" />
-      <img src="pexels-andreamostiphotography-17056221.jpg" alt="Foot care" loading="lazy" decoding="async" />
+      <img src="pexels-andreamostiphotography-17056222.jpg?v=2" alt="Mobile foot care nurse treating a client's feet in Kelowna" loading="lazy" decoding="async" />
+      <img src="pexels-alesiakozik-7795827.jpg?v=2" alt="Relaxing home spa pedicure with warm towels" loading="lazy" decoding="async" />
+      <img src="pexels-kseniachernaya-6340563.jpg?v=2" alt="Gentle nurse-led toenail and nail care" loading="lazy" decoding="async" />
+      <img src="pexels-tima-miroshnichenko-6187855.jpg?v=2" alt="Foot care nurse trimming toenails at a home visit in Kelowna" loading="lazy" decoding="async" />
+      <img src="pexels-tima-miroshnichenko-6188032.jpg?v=2" alt="Home spa pedicure treatment in progress" loading="lazy" decoding="async" />
+      <img src="pexels-andreamostiphotography-17056221.jpg?v=2" alt="Soothing foot and nail care at home" loading="lazy" decoding="async" />
     </div>
   </div>
 </section>
@@ -244,108 +243,27 @@
       </div>
       <div style="display:flex; flex-direction:column; gap:1.2rem;">
         <div style="display:flex; gap:1.2rem; align-items:flex-start; padding:1.5rem; background:var(--bg-soft); border-radius:8px; border:1px solid var(--line-rose);">
-          <div style="width:40px; height:40px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:white; font-size:1rem;">⚕️</div>
+          <div style="width:40px; height:40px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:white;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
           <div>
             <div style="font-weight:500; color:var(--plum); margin-bottom:0.3rem;">LPN &amp; FCN Certified</div>
             <p class="t-body" style="font-size:0.92rem;">Clinical training behind every single treatment — not just aesthetics.</p>
           </div>
         </div>
         <div style="display:flex; gap:1.2rem; align-items:flex-start; padding:1.5rem; background:var(--bg-soft); border-radius:8px; border:1px solid var(--line-rose);">
-          <div style="width:40px; height:40px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:white; font-size:1rem;">🛡️</div>
+          <div style="width:40px; height:40px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:white;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z"/><path d="m9 12 2 2 4-4"/></svg></div>
           <div>
             <div style="font-weight:500; color:var(--plum); margin-bottom:0.3rem;">Hospital-Grade Sterile</div>
             <p class="t-body" style="font-size:0.92rem;">New or fully sterilized instruments for every client, every time.</p>
           </div>
         </div>
         <div style="display:flex; gap:1.2rem; align-items:flex-start; padding:1.5rem; background:var(--bg-soft); border-radius:8px; border:1px solid var(--line-rose);">
-          <div style="width:40px; height:40px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:white; font-size:1rem;">🏡</div>
+          <div style="width:40px; height:40px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:white;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
           <div>
             <div style="font-weight:500; color:var(--plum); margin-bottom:0.3rem;">Fully Mobile</div>
             <p class="t-body" style="font-size:0.92rem;">We come to you across Kelowna — luxury without leaving home.</p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIAL -->
-<div class="testimonial-block">
-  <span class="quote-mark">"</span>
-  <p class="quote-body">The most luxurious foot care I have ever experienced. Lisa is meticulous, warm, and genuinely talented — my feet have never looked or felt this good.</p>
-  <p class="quote-name">— Monique T., Kelowna</p>
-</div>
-
-<!-- REVIEWS ROW -->
-<section class="bg-soft" style="border-top:1px solid var(--line);">
-  <div class="wrap section-pad">
-    <div class="text-center" style="margin-bottom:3.5rem;">
-      <span class="t-label">Client Reviews</span>
-      <span class="rule rule-center"></span>
-      <h2 class="t-h2" style="margin-top:0.5rem;">What our clients say</h2>
-    </div>
-    <div class="grid-3 reveal-group">
-      <div class="card">
-        <div style="color:var(--gold); letter-spacing:2px; margin-bottom:0.8rem; font-size:0.9rem;">★★★★★</div>
-        <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:1.05rem; line-height:1.7; color:var(--plum); margin-bottom:1.2rem;">"As a diabetic, I was nervous about foot care. Lisa was so careful and knowledgeable — I felt completely safe and my feet look amazing."</p>
-        <div style="font-size:0.75rem; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold);">Sandra K.</div>
-      </div>
-      <div class="card">
-        <div style="color:var(--gold); letter-spacing:2px; margin-bottom:0.8rem; font-size:0.9rem;">★★★★★</div>
-        <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:1.05rem; line-height:1.7; color:var(--plum); margin-bottom:1.2rem;">"She came to my home and created the most beautiful little spa experience. Three weeks later my gel is still perfect. I won't go anywhere else!"</p>
-        <div style="font-size:0.75rem; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold);">Renée M.</div>
-      </div>
-      <div class="card">
-        <div style="color:var(--gold); letter-spacing:2px; margin-bottom:0.8rem; font-size:0.9rem;">★★★★★</div>
-        <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:1.05rem; line-height:1.7; color:var(--plum); margin-bottom:1.2rem;">"I booked the Signature Spa Pedicure for my birthday and it was absolutely worth it. Lisa's attention to detail is unlike anything I've experienced."</p>
-        <div style="font-size:0.75rem; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold);">Diane L.</div>
-      </div>
-    </div>
-    <div class="text-center" style="margin-top:3rem;">
-      <a href="testimonials.html" class="btn btn-outline">Read All Reviews</a>
-    </div>
-  </div>
-</section>
-
-<!-- BLOG PREVIEW -->
-<section style="background:var(--bg); border-top:1px solid var(--line);">
-  <div class="wrap section-pad">
-    <div class="text-center" style="margin-bottom:3.5rem;">
-      <span class="t-label">From the Blog</span>
-      <span class="rule rule-center"></span>
-      <h2 class="t-h2" style="margin-top:0.5rem;">Foot care tips<br><em>from a nurse</em></h2>
-    </div>
-    <div class="blog-grid reveal-group">
-      <a href="blog-diabetic-foot-care.html" class="blog-card">
-        <img src="pexels-tima-miroshnichenko-6187855.jpg" alt="Diabetic foot care" class="blog-card-img" loading="lazy" decoding="async" />
-        <div class="blog-card-body">
-          <div class="blog-tag">Clinical Care</div>
-          <div class="blog-card-title">Diabetic Foot Care in Kelowna: What to Expect at Your First Appointment</div>
-          <p class="blog-card-excerpt">If you're living with diabetes, your feet need specialised care. Here's what a first visit with a Foot Care Nurse looks like.</p>
-          <div class="blog-card-meta"><span>Lisa Tattersall</span><span>8 min read</span></div>
-        </div>
-      </a>
-      <a href="blog-mobile-pedicure-seniors.html" class="blog-card">
-        <img src="pexels-anete-lusina-5240641.jpg" alt="Mobile pedicure for seniors" class="blog-card-img" loading="lazy" decoding="async" />
-        <div class="blog-card-body">
-          <div class="blog-tag">Senior Care</div>
-          <div class="blog-card-title">Why More Kelowna Seniors Are Choosing Mobile Foot Care</div>
-          <p class="blog-card-excerpt">Getting to a salon isn't always easy. Mobile foot care brings clinical-grade pedicure and care to your living room.</p>
-          <div class="blog-card-meta"><span>Lisa Tattersall</span><span>6 min read</span></div>
-        </div>
-      </a>
-      <a href="blog-foot-care-nurse-vs-pedicurist.html" class="blog-card">
-        <img src="pexels-kseniachernaya-6340563.jpg" alt="Foot care nurse vs pedicurist" class="blog-card-img" loading="lazy" decoding="async" />
-        <div class="blog-card-body">
-          <div class="blog-tag">Education</div>
-          <div class="blog-card-title">Foot Care Nurse vs Regular Pedicurist: What's the Difference?</div>
-          <p class="blog-card-excerpt">They both take care of your feet — but the training, scope, and safety couldn't be more different. Here's what sets a nurse apart.</p>
-          <div class="blog-card-meta"><span>Lisa Tattersall</span><span>7 min read</span></div>
-        </div>
-      </a>
-    </div>
-    <div class="text-center" style="margin-top:3rem;">
-      <a href="blog.html" class="btn btn-rose">Read the Blog</a>
     </div>
   </div>
 </section>
@@ -370,7 +288,7 @@
 <footer class="footer">
   <div class="footer-grid">
     <div class="footer-logo">
-      <img src="logo-png.png" alt="The Tootsy Nurse" />
+      <img src="logo-png.png?v=2" alt="The Tootsy Nurse" />
       <p class="footer-tagline">"Treat your feet."<br>Lisa Tattersall, LPN, FCN · Kelowna, BC</p>
       <div class="footer-social">
         <a href="https://www.instagram.com/thetootsynurse" target="_blank" rel="noopener">
@@ -394,7 +312,6 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About Lisa</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="testimonials.html">Reviews</a></li>
         <li><a href="contact.html">Book Now</a></li>
       </ul>
     </div>

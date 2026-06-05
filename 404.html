@@ -5,19 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page Not Found — The Tootsy Nurse</title>
   <meta name="robots" content="noindex" />
-  <link rel="icon" type="image/png" href="logo-png.png" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#3A1F2B" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav class="nav nav--solid">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav nav--solid" id="nav">
   <a href="index.html" class="nav-logo">The Tootsy Nurse</a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="services.html">Services</a></li>
     <li><a href="about.html">About</a></li>
+    <li><a href="blog.html">Blog</a></li>
   </ul>
   <a href="contact.html" class="nav-book">Book Now</a>
   <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
@@ -28,12 +36,13 @@
   <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
   <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
   <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+  <li><a href="blog.html" onclick="toggleMenu()">Blog</a></li>
   <li><a href="contact.html" onclick="toggleMenu()">Book Now</a></li>
 </ul>
 
-<section style="background:var(--bg); min-height:80vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:4rem 1.5rem;">
+<section id="main" style="background:var(--bg); min-height:80vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:4rem 1.5rem;">
   <div style="max-width:480px;">
-    <img src="logo-png.png" alt="The Tootsy Nurse" style="height:120px; width:auto; margin:0 auto 2.5rem; mix-blend-mode:multiply; opacity:0.5; display:block;" />
+    <img src="logo-png.png?v=2" alt="The Tootsy Nurse" style="height:120px; width:auto; margin:0 auto 2.5rem; mix-blend-mode:multiply; opacity:0.5; display:block;" />
     <span class="t-label" style="display:block; margin-bottom:1rem;">404 — Page Not Found</span>
     <span class="rule rule-center" style="margin:1rem auto;"></span>
     <h1 class="t-h2" style="margin-bottom:1rem; color:var(--plum);">
@@ -50,7 +59,7 @@
 <footer class="footer">
   <div class="footer-grid">
     <div class="footer-logo">
-      <img src="logo-png.png" alt="The Tootsy Nurse" />
+      <img src="logo-png.png?v=2" alt="The Tootsy Nurse" />
       <p class="footer-tagline">"Treat your feet."<br>Lisa Tattersall, LPN, FCN · Kelowna, BC</p>
     </div>
     <div class="footer-col">
