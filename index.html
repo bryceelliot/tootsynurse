@@ -40,9 +40,11 @@
   <meta name="theme-color" content="#3A1F2B" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" /></noscript>
 
-  <link rel="stylesheet" href="style.css?v=2" />
-  <link rel="preload" as="image" href="pexels-marine-fougere-2159237528-35884502.jpg?v=2" fetchpriority="high" />
+  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="preload" as="image" imagesrcset="pexels-marine-fougere-sm.jpg?v=2 760w, pexels-marine-fougere-2159237528-35884502.jpg?v=2 1280w" imagesizes="(max-width:900px) 100vw, 48vw" fetchpriority="high" />
 
   <!-- Google Analytics 4 — replace GA_MEASUREMENT_ID with your real ID from analytics.google.com -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
@@ -135,12 +137,12 @@
     </ul>
   </div>
   <div class="hero-split-media">
-    <img src="pexels-marine-fougere-2159237528-35884502.jpg?v=2" alt="Calm in-home spa setup with a lit candle, fresh rolled towel and gold mirror" width="1280" height="1920" fetchpriority="high" decoding="async" />
+    <img src="pexels-marine-fougere-2159237528-35884502.jpg?v=2" srcset="pexels-marine-fougere-sm.jpg?v=2 760w, pexels-marine-fougere-2159237528-35884502.jpg?v=2 1280w" sizes="(max-width:900px) 100vw, 48vw" alt="Calm in-home spa setup with a lit candle, fresh rolled towel and gold mirror" width="1280" height="1920" fetchpriority="high" decoding="async" />
   </div>
 </section>
 
 <!-- INTRO -->
-<section id="main" style="background:var(--bg);">
+<section id="main" role="main" style="background:var(--bg);">
   <div class="wrap section-pad">
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center;">
       <div class="reveal-left">
@@ -316,7 +318,7 @@
   <div class="footer-bottom">
     <span>© <span id="yr"></span> The Tootsy Nurse. All rights reserved.</span>
     <span>Mobile Foot Care · Kelowna, BC</span>
-    <span>Designed by <a href="https://bryceelliot.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.4); text-decoration:underline; text-underline-offset:3px;">Elliot Digital</a></span>
+    <span>Designed by <a href="https://bryceelliot.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.8); text-decoration:underline; text-underline-offset:3px;">Elliot Digital</a></span>
   </div>
 </footer>
 
