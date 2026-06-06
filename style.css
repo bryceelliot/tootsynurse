@@ -336,6 +336,12 @@ input:focus-visible, select:focus-visible, textarea:focus-visible,
   overflow: hidden;
 }
 .hero-split-text { max-width: 540px; }
+/* Centered text-only hero (no photo) */
+.hero-split.hero-center { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+.hero-center .hero-split-text { max-width: 680px; }
+.hero-center .hero-sub { margin-left: auto; margin-right: auto; }
+.hero-center .hero-cta, .hero-center .hero-trust { justify-content: center; }
+.hero-center .hero-trust { border-top: none; padding-top: 0.5rem; }
 .hero-h1 {
   font-family: 'Playfair Display', serif;
   font-size: clamp(2.6rem, 5vw, 4.1rem);
